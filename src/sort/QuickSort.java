@@ -9,7 +9,7 @@ import utils.array.ArrayUtils;
 public class QuickSort {
     public static void sort(int[] array, int p, int r) {
         if (p < r) {
-            int q = partition(array, p, r);
+            int q = randomPartition(array, p, r);
             sort(array, p, q - 1);
             sort(array, q + 1, r);
         }
@@ -27,4 +27,12 @@ public class QuickSort {
         ArrayUtils.swap(array, p, i);
         return i;
     }
+
+    private static int randomPartition(int[] array, int p ,int r){
+        int i = p+(int)Math.random()*(r-p);
+        ArrayUtils.swap(array, p, i);
+        return partition(array,p,r);
+    }
+
+
 }

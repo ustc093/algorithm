@@ -13,15 +13,15 @@ import java.util.Date;
  */
 public class SortTest {
     public static void main(String[] args) {
-        int[] array = ArrayUtils.generateArray(60, 60);
+        int[] array = ArrayUtils.generateArray(600, 600000);
         ArrayUtils.display(array);
         long start = System.currentTimeMillis();
         //InsertSort.sort(array);
         //BubbleSort.sort(array);
         //ChoiceSort.sort(array);
        //MergeSort.sort(array,0,array.length-1);
-        //Arrays.sort(array);
-        QuickSort.sort(array,0,array.length-1);
+        Arrays.sort(array);
+        //QuickSort.sort(array,0,array.length-1);
         long end = System.currentTimeMillis();
         long runningTime = end - start;
         ArrayUtils.display(array);
