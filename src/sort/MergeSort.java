@@ -1,6 +1,5 @@
 package sort;
 
-import utils.MyUtils;
 
 /**
  * @author gaozhen@cloudwalk.cn
@@ -8,7 +7,7 @@ import utils.MyUtils;
  */
 public class MergeSort {
 
-    private static void sort(int[] array, int start, int end) {
+    public static void sort(int[] array, int start, int end) {
         if (start < end) {
             int mid = (start + end) / 2;
             sort(array, start, mid);
@@ -29,18 +28,10 @@ public class MergeSort {
         while (p2 <= right) {
             temp[k++] = array[p2++];
         }
-
         //复制数组
         for (int i = left; i <= right; i++) {
             array[i] = temp[i];
         }
     }
 
-
-    public static void main(String[] args) {
-        int[] arrray = {6, 5, 3, 1, 8, 7, 2, 4};
-        MyUtils.display(arrray);
-        sort(arrray, 0, arrray.length - 1);
-        MyUtils.display(arrray);
-    }
 }

@@ -1,14 +1,13 @@
 package sort;
 
-import utils.MyUtils;
 
 /**
  * @author gaozhen@cloudwalk.cn
  * 2019年09月17日 17:06
  */
-public class Insertsort {
+public class InsertSort {
 
-    private static void sort(int[] array) {
+    public static void sort(int[] array) {
         int j;
         for (int i = 1; i < array.length; i++) {
             int key = array[i];
@@ -22,11 +21,4 @@ public class Insertsort {
         }
     }
 
-
-    public static void main(String[] args) {
-        int[] array = {6, 5, 3, 1, 8, 7, 2, 4};
-        MyUtils.display(array);
-        sort(array);
-        MyUtils.display(array);
-    }
 }
