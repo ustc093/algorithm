@@ -1,4 +1,4 @@
-package sort;
+package leetcode.sort;
 
 import utils.array.ArrayUtils;
 

@@ -1,4 +1,4 @@
-package sort;
+package leetcode.sort;
 
 /**
  * @author gaozhen@cloudwalk.cn
