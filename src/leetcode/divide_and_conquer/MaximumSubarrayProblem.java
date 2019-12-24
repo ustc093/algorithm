@@ -1,4 +1,4 @@
-package divide_and_conquer;
+package leetcode.divide_and_conquer;
 
 /**
  * @author gaozhen@cloudwalk.cn
