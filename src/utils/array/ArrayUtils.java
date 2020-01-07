@@ -17,6 +17,14 @@ public class ArrayUtils {
         System.out.println();
     }
 
+    public static void display(int[][] array){
+        for(int[] is:array){
+            for(int element:is){
+                System.out.print(element+",");
+            }
+            System.out.println("");
+        }
+    }
 
     /**
      * 根据下标来交换数组中的元素
